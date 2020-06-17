@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testcase_suite]">
+  <listeners>
+    <listener class-name="POM.ListenerWithReports"/>
+  </listeners>
+  <test thread-count="5" name="Group1(failed)">
+    <classes>
+      <class name="POM.VerifyLogin_PgFactory">
+        <methods>
+          <include name="ValidLogin__fact"/>
+        </methods>
+      </class> <!-- POM.VerifyLogin_PgFactory -->
+      <class name="POM.GoogleDemo">
+        <methods>
+          <include name="TestAssertB1"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- POM.GoogleDemo -->
+    </classes>
+  </test> <!-- Group1(failed) -->
+  <test thread-count="5" name="Group2(failed)">
+    <classes>
+      <class name="POM.VerifyLogin_PgFactory">
+        <methods>
+          <include name="ValidLogin__fact"/>
+        </methods>
+      </class> <!-- POM.VerifyLogin_PgFactory -->
+      <class name="POM.excelloop">
+        <methods>
+          <include name="ReadWrite"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- POM.excelloop -->
+    </classes>
+  </test> <!-- Group2(failed) -->
+</suite> <!-- Failed suite [testcase_suite] -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="testcase_suite" parallel="false">
+ <listeners> 
+ <listener class-name="POM.ListenerWithReports"/>
+   </listeners>
+  
+  
+  <test name="Group1">
+    <classes>
+      <class name="POM.GoogleDemo"/>
+      <class name="POM.VerifyLogin_PgFactory"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Group2">
+    <classes>
+      <class name="POM.excelloop"/>
+      <class name="POM.VerifyLogin_PgFactory"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
